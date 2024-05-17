@@ -235,7 +235,7 @@ function main() {
     //Write a function to create the geometry for multiple cubes
     function makeInstance( geometry, color, x, y, z ) {
 
-		if (z == undefined){
+		if (z === undefined){
 			z=0;
 		}
 
