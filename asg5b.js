@@ -289,7 +289,7 @@ function main() {
 	];
 
 	const toruses = [
-		makeInstance( myTorusGeometry, 0x44aa88, 2, 2 ),
+		makeInstance( myTorusGeometry, 0x44aa88, 2, 2, 1 ),
 	];
 
 	{
