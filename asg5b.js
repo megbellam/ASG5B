@@ -233,7 +233,11 @@ function main() {
     //const material = new THREE.MeshPhongMaterial( { color: 0x44aa88 } ); // greenish blue
 
     //Write a function to create the geometry for multiple cubes
-    function makeInstance( geometry, color, x, y ) {
+    function makeInstance( geometry, color, x, y, z ) {
+
+		if (z == undefined){
+			z=0;
+		}
 
 		const material = new THREE.MeshPhongMaterial( { color } );
 
@@ -242,6 +246,7 @@ function main() {
 
 		cube.position.x = x;
 		cube.position.y = y;
+		cube.position.z = z;
 
 		return cube;
 
