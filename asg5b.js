@@ -218,7 +218,7 @@ function main() {
 	const myConeGeometry = new THREE.ConeGeometry( .5, 2, 20 );
 	const mySphereGeometry = new THREE.SphereGeometry( .5, 20, 10 );
 	const mySphere2Geometry = new THREE.SphereGeometry( .1, 20, 10 );
-	const myTorusGeometry = new THREE.TorusGeometry( 2, .5, 5, 5 );
+	const myTorusGeometry = new THREE.TorusGeometry( 1, .5, 5, 5 );
 
 	const loader = new THREE.TextureLoader();
 	const texture = loader.load( 'https://threejs.org/manual/examples/resources/images/wall.jpg' );
