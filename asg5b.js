@@ -213,12 +213,12 @@ function main() {
 	const boxWidth = .5;
 	const boxHeight = .5;
 	const boxDepth = .5;
-    //Create a box
+    //Create a geometries
 	const geometry = new THREE.BoxGeometry( boxWidth, boxHeight, boxDepth );
 	const myConeGeometry = new THREE.ConeGeometry( .5, 2, 20 );
 	const mySphereGeometry = new THREE.SphereGeometry( .5, 20, 10 );
 	const mySphere2Geometry = new THREE.SphereGeometry( .1, 20, 10 );
-	const myTorusGeometry = new THREE.TorusGeometry( .3, 20, 10, 100 );
+	const myTorusGeometry = new THREE.TorusGeometry( 3, 1, 10, 10 );
 
 	const loader = new THREE.TextureLoader();
 	const texture = loader.load( 'https://threejs.org/manual/examples/resources/images/wall.jpg' );
@@ -289,7 +289,7 @@ function main() {
 	];
 
 	const toruses = [
-		makeInstance( myTorusGeometry, 0x44aa88, 1, 0 ),
+		makeInstance( myTorusGeometry, 0x44aa88, 1, 2 ),
 	];
 
 	{
