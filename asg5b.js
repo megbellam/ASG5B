@@ -218,6 +218,7 @@ function main() {
 	const myConeGeometry = new THREE.ConeGeometry( .5, 2, 20 );
 	const mySphereGeometry = new THREE.SphereGeometry( .5, 20, 10 );
 	const mySphere2Geometry = new THREE.SphereGeometry( .1, 20, 10 );
+	const myTorusGeometry = new THREE.TorusGeometry( .3, 20, 10, 100 );
 
 	const loader = new THREE.TextureLoader();
 	const texture = loader.load( 'https://threejs.org/manual/examples/resources/images/wall.jpg' );
@@ -285,6 +286,10 @@ function main() {
 		makeInstance( mySphere2Geometry, 0x8844aa, 1.15, 1.75),
 		makeInstance( mySphereGeometry, 0xaa8844, 0, -1)
 
+	];
+
+	const toruses = [
+		makeInstance( myTorusGeometry, 0x44aa88, -0.7, 0 ),
 	];
 
 	{
